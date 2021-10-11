@@ -5,13 +5,23 @@ import { Graph1Component } from "./graph1/graph1.component";
 import { PagesComponent } from "./pages.component";
 import { PagesRoutes } from "./pages.routes";
 import { ProgressComponent } from "./progress/progress.component";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from "@angular/common";
+import { IncrementadorComponent } from "../components/incrementador/incrementador.component";
+
+//ng2-charts
+import { ChartsModule } from 'ng2-charts';
+import { DoughnutComponent } from "../components/doughnut/doughnut.component";
+
 
 @NgModule ({
     declarations:[
         DashboardComponent,
         Graph1Component,
         ProgressComponent,
-        PagesComponent
+        PagesComponent, 
+        IncrementadorComponent,
+        DoughnutComponent
     ],
     exports:[
         DashboardComponent,
@@ -20,7 +30,10 @@ import { ProgressComponent } from "./progress/progress.component";
     ], 
     imports:[
         SharedModule,
-        PagesRoutes
+        PagesRoutes,
+        FormsModule,
+        CommonModule,
+        ChartsModule
     ]
 })  
 

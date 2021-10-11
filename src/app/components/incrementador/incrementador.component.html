@@ -1,0 +1,8 @@
+<div class="card-title">
+    {{leyenda}}
+</div>
+<div class="input-group">
+    <input #txtProgress type="number" name="progreso" (ngModelChange)="onChanges($event)" min="0" max="100" class="form-control" placeholder="Valor" [(ngModel)]="valor">
+    <button class="btn btn-success" (click)="cambiaValor(5)" type="button"><i class="fa fa-plus"></i></button>
+    <button class="btn btn-danger" (click)="cambiaValor(-5)" type="button"><i class="fa fa-minus"></i></button>
+</div>
