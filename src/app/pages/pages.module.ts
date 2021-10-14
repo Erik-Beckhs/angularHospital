@@ -12,6 +12,7 @@ import { IncrementadorComponent } from "../components/incrementador/incrementado
 //ng2-charts
 import { ChartsModule } from 'ng2-charts';
 import { DoughnutComponent } from "../components/doughnut/doughnut.component";
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule ({
@@ -21,7 +22,8 @@ import { DoughnutComponent } from "../components/doughnut/doughnut.component";
         ProgressComponent,
         PagesComponent, 
         IncrementadorComponent,
-        DoughnutComponent
+        DoughnutComponent,
+        AccountSettingsComponent
     ],
     exports:[
         DashboardComponent,
