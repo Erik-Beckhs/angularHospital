@@ -11,7 +11,7 @@ import { Page404Component } from './shared/page404/page404.component';
 import { RegisterComponent } from './login/register.component';
 import { SharedComponent } from './shared/shared.component';
 //import { IncrementadorComponent } from './components/incrementador/incrementador.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
 
 
@@ -30,7 +30,8 @@ import { ServiceModule } from './services/service.module';
     AppRoutingModule,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ServiceModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
