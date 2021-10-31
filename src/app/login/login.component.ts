@@ -34,6 +34,9 @@ export class LoginComponent implements OnInit {
     if(forma.invalid){
       return ;
     }
-    this._usuarioService.login(user, forma.value.recuerdame).subscribe(res=>this.router.navigate(['/dashboard']))
+    this._usuarioService.login(user, forma.value.recuerdame)
+    .subscribe(res=>{
+      this.router.navigate(['/dashboard'])
+   })
   }
 }

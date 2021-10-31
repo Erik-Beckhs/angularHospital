@@ -15,14 +15,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     Page404Component,
     RegisterComponent,
-    SharedComponent
+    SharedComponent,
     //IncrementadorComponent
   ],
   imports: [

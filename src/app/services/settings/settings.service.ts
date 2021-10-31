@@ -17,17 +17,17 @@ export class SettingsService {
 
   guardaTema(){
     localStorage.setItem('settings', JSON.stringify(this.ajustes))
-    console.log('TEMA GUARDADO')
+    //console.log('TEMA GUARDADO')
   }
 
   cargarTema(){
     const x = localStorage.getItem('settings');
     if(x!=null){
       this.ajustes=JSON.parse(x)
-      console.log('Cargando del local storage')
+      //console.log('Cargando del local storage')
     }
     else{
-      console.log('Usando el tema por defecto')
+      //console.log('Usando el tema por defecto')
     }
     this.aplicarTema(this.ajustes.tema)
   }

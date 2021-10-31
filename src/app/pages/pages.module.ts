@@ -15,6 +15,10 @@ import { DoughnutComponent } from "../components/doughnut/doughnut.component";
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PipesModule } from "../pipes/pipes.module";
+import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModalUpdateComponent } from "../components/modal-update/modal-update.component";
 
 
 @NgModule ({
@@ -27,7 +31,10 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         DoughnutComponent,
         AccountSettingsComponent,
         PromisesComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent,
+        UsuariosComponent,
+        ModalUpdateComponent
     ],
     exports:[
         DashboardComponent,
@@ -39,7 +46,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         PagesRoutes,
         FormsModule,
         CommonModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule
     ]
 })  
 

@@ -15,6 +15,15 @@ export class SidebarService {
         {title: 'Promises', route:'/promises'},
         {title: 'RXJS', route:'/rxjs'}
       ]
+    },
+    {
+      title:'Mantenimiento',
+      icon:'mdi mdi-account-settings-variant',
+      submenu : [
+        {title: 'Usuarios', route:'/usuarios'},
+        {title: 'Medicos', route:'/medicos'},
+        {title: 'Hospitales', route:'/hospitales'}
+      ]
     }
   ] 
   constructor() { }
